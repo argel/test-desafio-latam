@@ -40,13 +40,22 @@ Dado el punto anterior agregaría una unidad introductoria al IDE y las lecturas
 
 Explicación del patron MVC a nivel teórico dado que la implementación de este en el lenguaje puede llevar a confusión
 ### Para el módulo 5
-Considerar guiar el desarrollo utilizando [Springboot](https://spring.io/projects/spring-boot) y su [inicializador](https://start.spring.io/), de manera de concentrarse en todo lo que provee el framework que es bastante      
+Es escencial que se considere spring Core (El contenedor IOC de spring), que quede claro para los alumnos el concepto de inyeccion de dependencias y como lo resuelve spring.
 
-Considerar introducir el uso de un motor de plantillas como Thymeleaf, que permite una mejor y más fácil integración entre el html puro y el código Java en comparación a JSP
+Considerar guiar el desarrollo utilizando [Springboot](https://spring.io/projects/spring-boot) y su [inicializador](https://start.spring.io/), de manera de concentrarse en todo lo que provee el framework que es bastante.
 
+Considerar introducir el uso de un motor de plantillas como Thymeleaf, que permite una mejor y más fácil integración entre el html puro y el código Java en comparación a JSP.
+
+---
 > *Además, necesitamos que respondas las siguientes preguntas:*
 >
 > * *¿Qué es lo mínimo que debe adquirir el alumno para integrarse a un equipo de trabajo y desempeñarse como Desarrollador Full Stack Java?*
+---
+---
 > * *¿Cuándo se debe utilizar JWT en Java, y cómo lo implementarías en un proyecto?*
+---
+---
 > * *Realizar demostración de cómo debe ser explicado el patrón de diseño de MVC a un alumno*
+---
+---
 > * *Crear un ejemplo guiado de serialización y deserialización usando Spring MVC y JSON* 
