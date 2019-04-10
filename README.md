@@ -1,7 +1,7 @@
 Test Desafío Latam
 ====
 
-*A través de este repositorio se pretende dar respuesta a las preguntas solicitadas por Susana de Desafío Latam, a través del correo reproducido a continuación:*
+*A través de este repositorio se pretende dar respuesta a las preguntas solicitadas por Susana de Desafío Latam, de acuerdo al correo reproducido a continuación:*
 
 > *De acuerdo a lo conversado con respecto a la creación de nuestra nueva carrera Desarrollo Full Stack Java, ésta se encuentra distribuida en módulos, los cuáles se tiene considerado*:
 >
