@@ -51,6 +51,12 @@ Considerar introducir el uso de un motor de plantillas como Thymeleaf, que permi
 >
 > * *¿Qué es lo mínimo que debe adquirir el alumno para integrarse a un equipo de trabajo y desempeñarse como Desarrollador Full Stack Java?*
 ---
+El alumno debe adquirir las siguientes habilidades para poder desempeñarse como desarrollador fullstack java
+* Conocimiento sobre el lenguaje Java y Programación orientada a objetos.
+* Conocimiento sobre HTML, CSS, Javascript. Dependiendo del caso podría ser necesario conocer sobre algun framework javascript en particular (React, Angular, Vue, etc).
+* Entendimiento del ciclo de vida y los componentes y patrones escenciales de la arquitectura web para Java (Servlets, MVC, JSP)
+* Conocimiento del framework Spring, principalmente de los módulos MVC, Core (IoC Container) y JPA
+* Conocimiento sobre el uso de administradores de paquetes modernos en Java, Maven /Gradle principalmente
 ---
 > * *¿Cuándo se debe utilizar JWT en Java, y cómo lo implementarías en un proyecto?*
 ---
