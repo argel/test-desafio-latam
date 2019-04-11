@@ -76,14 +76,12 @@ Una implementación sencilla consiste en lo siguiente:
 
 El patron MVC (Modelo Vista Controlador) es un patron compuesto que se utiliza principalmente para resolver uno de los problemas más comunes que tienen los desarrolladores web, el cual consiste en separar la lógica de presentación (Vista) de la lógica del negocio (Modelo).
 
+![Patron MVC](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/ModelViewControllerDiagram_es.svg/220px-ModelViewControllerDiagram_es.svg.png)
+
 Para ello el patron MVC consta de tres partes, tal cual su nombre lo indica sus partes son las siguientes
 * Modelo: El modelo es el responsable de contener los datos y/o estado de un objeto que se desea mostrar en la Vista
 * Vista: La vista es la responsable de representar, en este caso a través de una página web, los datos provistos por el "Modelo"
 * Controlador: El controlador es el reponsable de coordinar que las acciones que se gatillan desde la vista (clicks, cargas, etc) se reflejen  en el modelo respectivo y que este sea a su vez enviado a la vista correspondiente.
-
-Ejemplo:
-
-//TODO
 
 * 
 ---
