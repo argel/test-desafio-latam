@@ -57,11 +57,21 @@ El alumno debe adquirir las siguientes habilidades para poder desempeñarse como
 * Entendimiento del ciclo de vida y los componentes y patrones escenciales de la arquitectura web para Java (Servlets, MVC, JSP)
 * Conocimiento del framework Spring, principalmente de los módulos MVC, Core (IoC Container) y JPA
 * Conocimiento sobre el uso de administradores de paquetes modernos en Java, Maven /Gradle principalmente
+
 ---
 > * *¿Cuándo se debe utilizar JWT en Java, y cómo lo implementarías en un proyecto?*
 ---
+JWT (Json Web Token) es un estándar para tokens de acceso a recursos, utilizado generalmente para transportar información básica del usuario y/o autorizar el acceso a algún recurso u operación web. Dentro del ecosistema Java su uso se da generalmente cuando queremos autorizar recursos y operaciones contra servicios Rest, ya que la aplicación cliente (App web con algún framework JS o aplicaciones móviles), envian el token JWT en los headers de cada peticion y los servicios rest, validan que el token sea válido y que cuente con los permisos necesarios para operar.
+
+Una implementación sencilla consiste en lo siguiente:
+1. Crear un servicio/endpoint especializado que permita validar un usuario y password el cual retorne un token JWT con información básica del cliente y los roles asociados al usuario. Utilizando la biblioteca de spring security respectiva para jwt (spring-security-jwt)
+   * ```Ejemplo: login-service -> endpoint -> POST /login ```
+2. Crear un servicio que acceda a alguna base de datos u obtenga información, el cual sea capaz de validar el token JWT obtenido con el servicio "login-service". Para esto se utiliza la misma biblioteca que login service solo que se solicita la autorización utilizando la anotacion ```@PreAutorize```
+3. Las aplicaciones obtendran el token a través de login-service y enviaran dicho token en la cabecera ```Autorization```
+
 ---
 > * *Realizar demostración de cómo debe ser explicado el patrón de diseño de MVC a un alumno*
 ---
+
 ---
 > * *Crear un ejemplo guiado de serialización y deserialización usando Spring MVC y JSON* 
