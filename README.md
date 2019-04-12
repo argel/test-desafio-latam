@@ -83,8 +83,44 @@ Para ello el patron MVC consta de tres partes, tal cual su nombre lo indica sus 
 * Vista: La vista es la responsable de representar, en este caso a través de una página web, los datos provistos por el "Modelo"
 * Controlador: El controlador es el reponsable de coordinar que las acciones que se gatillan desde la vista (clicks, cargas, etc) se reflejen  en el modelo respectivo y que este sea a su vez enviado a la vista correspondiente.
 
-* 
 ---
 > * *Crear un ejemplo guiado de serialización y deserialización usando Spring MVC y JSON* 
 ---
-//TODO
+
+### Contexto
+
+Para que una aplicación pueda retornar objetos Java hacia el usuario, estos objetos deben ser transformados a un formato acorde a través de un proceso llamado serialización, el cual consiste, en el caso de la web, en convertir un objeto binario en una representación de texto del tipo JSON, a su vez, para poder recibir objetos Java, debe ocurrir el proceso inverso a la serialización, llamado deserialización el cual consiste en transformar un texto en formato JSON a un objeto binario Java, el framework spring MVC se encarga de esto de forma transparente tal como veremos en el siguiente ejemplo.
+
+### Paso a paso
+
+#### Paso 1, generación del proyecto
+
+Para demostrar el concepto de serialización y deserialización, lo primero que haremos será generar un proyecto web desde el sitio web de [SpringInitialzr](https://start.spring.io/). Para ello debemos considerar las siguientes opciones:
+* Project: "Maven Project", dado que el gestor de dependencias que estamos utilizando es Maven
+* Language: "Java", dado que estamos aprendiendo a hacer aplicaciones Java
+* Spring Boot:  "2.14", que corresponde a la última versión estable de Spring Boot
+* Project Metadata: Acá pondremos el grupo y nombre que más nos acomode, para este ejemplo usaremos los siguientes datos
+   * Group: cl.desafiolatam.fullstackjava
+   * Name: json-serialization-deserialization
+* Dependencies: En esta sección se seleccionan las dependencias provistas por spring boot para el desarrollo rápido de aplicaciones, en nuestro caso seleccionaremos las siguientes:
+   * Web: Esto nos creará un proyecto con todas las dependencias y configuraciones necesarias para utilizar Spring MVC
+   * Thymeleaf: Esta opción permitirá que nuestras páginas web las construyamos utilizando el motor de plantillas Thymeleaf
+
+En la imagen a continuación se muestran las opciones descritas configuradas en el sitio web
+
+![Configuracion Spring Initialzr](images/configuracion_spring_intializr.png)
+
+Hasta acá si abrimos nuestra aplicación en nuestro IDE favorito y ejecutamos la tarea maven springboot:run (```mvnw springboot:run```) podremos ver una página de error por defecto si accedemos a la url http://localhost:8080
+
+![Comando springboot:run](images/springboot-run-cmd.png)
+
+![Pagina error](images/default_error_page.png)
+
+#### Paso 2, Creación de una página de inicio
+
+#### Paso 3, Serialización de un objeto
+
+#### Paso 4, Deserialización de un objeto
+
+### Quizzes
+
